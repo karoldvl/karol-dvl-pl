@@ -7,14 +7,13 @@ Author: ResetBlue
 Author URI: http://resetblue.com.
 */
 @import url(stylesheets/skeleton.css);
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Allura);
+@import url(http://fonts.googleapis.com/css?family=Ropa+Sans:300,400,700);
 
 /* Global Styles
 ================================================== */
 body {
 	color: #f9f9f9;
-	font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Ropa Sans', 'Helvetica Neue', Arial, sans-serif;
 	font-size: 12px;
 	line-height: 1.5em;
 	font-weight: 300;
@@ -68,16 +67,67 @@ h4 { font-size: 20px; line-height: 1.8em;}
 /* Individual Styles
 ================================================== */
 
-header { padding: 50px 0 20px 0; }
+header { padding: 50px 0 10px 0; }
 
 
-footer {
-	font-family: 'Helvetica Neue', Arial, sans-serif;
-	margin-top: 100px;
+header.twitter {
+	font-family: 'Ropa Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
 	text-align: left;
+	
+	margin: 20px -500px 40px -500px !important;
+	padding: 30px 500px 10px 500px;
+	background: url(images/pattern.png) top left repeat;
+	opacity: 0.7;
+	filter: alpha(opacity = 70); /* For IE */
 }
 
-p.copyright { font-size: 12px; text-align: right;  }
+div.xfn {
+	font-family: 'Ropa Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+	text-align: left;
+	
+	margin: 20px -500px 40px -500px !important;
+	padding: 30px 500px 10px 500px;
+	background: url(images/pattern.png) top left repeat;
+	opacity: 0.7;
+	filter: alpha(opacity = 70); /* For IE */
+}
+
+.link_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+}
+
+.link_list li {
+	overflow-y: auto;
+	overflow-x: hidden;
+	list-style-type: none;
+}
+
+div.links { background: url(images/icons/links.png) top left no-repeat; text-align: left; padding: 0 0 0 52px; }
+div.links a {
+	color: #FFFFFF;
+}
+
+p.copyright, p.relme {
+	font-size: 24px;
+	text-align: right;
+	font-family: 'Ropa Sans', 'Helvetica Neue', Arial, sans-serif;
+	line-height: 1.3091em;
+	font-weight: 700;
+	padding-top: 5px;
+}
+
+p.copyright a, p.relme a {
+	color: #FFFFFF;
+}
+
+p.relme {
+	font-size: 16px;
+}
 
 h1#logo { margin: 0; }
 h1#logo img { width: 100%; }
@@ -259,6 +309,9 @@ img { border:none; }
 #ticker ul.tweet_list { height: 4em; overflow-y: hidden; }
 #ticker .tweet_list li { height: 4em; }
 #ticker { background: url(images/icons/twitter.png) top left no-repeat; text-align: left; padding: 0 0 0 52px; }
+#ticker a {
+	color: #9b9b9b;
+}
 
 /*  Mobile (Portrait)
 ================================================== */
