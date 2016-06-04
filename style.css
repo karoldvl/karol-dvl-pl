@@ -308,7 +308,7 @@ img { border:none; }
 
 #ticker ul.tweet_list { height: 4em; overflow-y: hidden; }
 #ticker .tweet_list li { height: 4em; }
-#ticker { background: url(images/icons/twitter.png) top left no-repeat; text-align: left; padding: 0 0 0 52px; }
+#ticker { /*background: url(images/icons/twitter.png) top left no-repeat;*/ text-align: left; padding: 0 0 0 52px; }
 #ticker a {
 	color: #9b9b9b;
 }
