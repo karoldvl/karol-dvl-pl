@@ -10,18 +10,18 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="./files/style.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-<script src="./files/ga.js"></script><script type="text/javascript" src="./files/jquery.js"></script>
-<script type="text/javascript" src="./files/supersized.3.2.7.min.js"></script>
-<script type="text/javascript" src="./files/supersized.shutter.min.js"></script>
-<script type="text/javascript" src="./files/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="./files/jquery.tweet.js"></script>
-<script type="text/javascript" src="./files/custom.js"></script>
+<script src="/js/ga.js"></script><script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="/js/supersized.shutter.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/jquery.tweet.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
 
 <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
 .en-markup-crop-options {
@@ -141,40 +141,11 @@
                     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
                     s.parentNode.insertBefore(g,s)}(document,'script'));
           </script>
-		  <!-- Start of StatCounter Code -->
-<script type="text/javascript">
-var sc_project=4348708; 
-var sc_invisible=1; 
-var sc_partition=55; 
-var sc_click_stat=1; 
-var sc_security="c24d4d05"; 
-</script>
-<script type="text/javascript" src="./files/counter_xhtml.js"></script><noscript>&lt;div class="statcounter"&gt;&lt;a title="free web stats" class="statcounter" href="http://www.statcounter.com/free_web_stats.html"&gt;&lt;img class="statcounter" src="http://c.statcounter.com/4348708/0/c24d4d05/1/" alt="free web stats" /&gt;&lt;/a&gt;&lt;/div&gt;</noscript>
-<!-- End of StatCounter Code -->
 
           <!-- Scripts and stuff
 ================================================== -->
 	<script>
 		jQuery(document).ready(function() {
-			jQuery("#ticker").tweet({
-				username: "karoldvl",
-				page: 1,
-				count: 3,
-				loading_text: "loading ...",
-				template: "{text}"
-			}).bind("loaded", function() {
-				var ul = $(this).find(".tweet_list");
-				var ticker = function() {
-					setTimeout(function() {
-						ul.find('li:first').animate( {marginTop: '-4em'}, 500, function() {
-							$(this).detach().appendTo(ul).removeAttr('style');
-						});
-						ticker();
-					}, 5000);
-				};
-				ticker();
-			});
-          
 			jQuery.supersized({
 				slide_interval: 10000, // Length between transitions
 				transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
@@ -182,12 +153,12 @@ var sc_security="c24d4d05";
 				slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
 				slides:		
 					[
-						{image : 'http://karol.dvl.pl/files/bg1.jpg'},
-						{image : 'http://karol.dvl.pl/files/bg2.jpg'},
-						{image : 'http://karol.dvl.pl/files/bg3.jpg'},
-						{image : 'http://karol.dvl.pl/files/bg4.jpg'},
-						{image : 'http://karol.dvl.pl/files/bg5.jpg'},
-						{image : 'http://karol.dvl.pl/files/bg6.jpg'},
+						{image : 'http://karol.dvl.pl/images/bg1.jpg'},
+						{image : 'http://karol.dvl.pl/images/bg2.jpg'},
+						{image : 'http://karol.dvl.pl/images/bg3.jpg'},
+						{image : 'http://karol.dvl.pl/images/bg4.jpg'},
+						{image : 'http://karol.dvl.pl/images/bg5.jpg'},
+						{image : 'http://karol.dvl.pl/images/bg6.jpg'},
 					]
 			});
 		});
